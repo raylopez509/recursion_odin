@@ -18,11 +18,9 @@ function fibs(num) {
     arr.push(nextFibNum);
     i++;
   }
-  console.log(arr);
 }
 
 fibs(8);
-
 
 function fibsRec(num) {
   if(num === 1) {
@@ -39,22 +37,3 @@ function fibsRec(num) {
 }
 
 console.log(fibsRec(8));
-
-  // if(num = 1) {
-  //   arr.push(prev1);
-  //   return arr;
-  // }
-  // else if(num == 2) {
-  //   arr.push(prev1);
-  //   arr.push(prev2);
-  //   return arr;
-  // }
-  // else {
-  //   arr
-  //   return fibsRec(arr)
-  // }
-  // return 
-
-// fibrec(n = 1) > return [0,1]
-
-// fibrec(n = 2) > return fib(n-1) array, append (fib(n-2)[fib(n-2).length-1] + fib(n-1)[fib(n-1).length-1])
