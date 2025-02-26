@@ -22,3 +22,39 @@ function fibs(num) {
 }
 
 fibs(8);
+
+
+function fibsRec(num) {
+  if(num === 1) {
+    return [0];
+  }
+  else if(num === 2) {
+    return [0,1];
+  }
+  else {
+    let array = fibsRec(num-1);
+    array.push(fibsRec(num-2)[fibsRec(num-2).length-1] + fibsRec(num-1)[fibsRec(num-1).length-1]);
+    return array;
+  }
+}
+
+console.log(fibsRec(8));
+
+  // if(num = 1) {
+  //   arr.push(prev1);
+  //   return arr;
+  // }
+  // else if(num == 2) {
+  //   arr.push(prev1);
+  //   arr.push(prev2);
+  //   return arr;
+  // }
+  // else {
+  //   arr
+  //   return fibsRec(arr)
+  // }
+  // return 
+
+// fibrec(n = 1) > return [0,1]
+
+// fibrec(n = 2) > return fib(n-1) array, append (fib(n-2)[fib(n-2).length-1] + fib(n-1)[fib(n-1).length-1])
